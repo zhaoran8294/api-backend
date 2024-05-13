@@ -1,0 +1,21 @@
+server:
+  port: 8102
+  servlet:
+    context-path: /api
+leapi:
+  client:
+    access-key: ghost
+    secret-key: abcdefg
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+knife4j:
+  config:
+    scan-path: com.ghost.leapiinterface.controller
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
