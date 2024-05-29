@@ -1,7 +1,7 @@
 
 ## 项目介绍
 
-基于 React + Golang + Gin + Dubbo-go 的 API接口开放调用平台。
+基于 React + Springboot+ Dubbo +Gateway 的 API接口开放调用平台。
 
 管理员可以集成并发布接口、下线接口及管理用户等；用户可以浏览接口、在线调试接口及更新用户凭证等，并通过 Java SDK 轻松调用接口。
 本项目为前后端分离项目，前端主要采用TypeScript、React、Antd Pro等主流开发框架。后端采用Spring Cloud SpringBoot 作为业务框架。通过Springcloud Gateway作为全局网关实现流量控制、负载均衡以及路由管理，使用Mybatis-plus作为持久层技术。使用Apache Dubbo做高性能远程服务调用。同时Nacos作为注册中心，完成服务注册与发现，通过各模块主要功能以及业务进行模块的合理划分。通过全链路日志以及回调配置, 支持异步接口调用 , 同时通过FreeMarker模板引擎进行自动化SDK代码以及接口文档生成 , 并通过Github Action完成SDK发版与接口文档部署。
